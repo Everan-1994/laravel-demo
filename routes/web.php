@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WechatController@code');
+
+Route::get('/index', 'WechatController@index');
+Route::get('/user', 'WechatController@user');
